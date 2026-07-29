@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Bizリプ サポート</title>
+<meta name="description" content="Bizリプのサポートページ。主な機能・よくある質問・お問い合わせ。" />
+<style>
+  :root{
+    --blue:#0071e3; --blue-dark:#0058b0; --ink:#1d1d1f; --sub:#6e6e73;
+    --bg:#ffffff; --card:#ffffff; --line:#e8e8ed; --soft:#f5f5f7;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Helvetica Neue",Arial,sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.85; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px;}
+  a{color:var(--blue-dark);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .hero{text-align:center;padding:72px 20px 40px;}
+  .badge{
+    width:76px;height:76px;margin:0 auto 22px;border-radius:22px;
+    background:linear-gradient(145deg,#42a5ff,var(--blue));
+    box-shadow:0 10px 24px rgba(0,113,227,.26);
+    display:flex;align-items:center;justify-content:center;font-size:36px;
+  }
+  .hero h1{font-size:2rem;font-weight:800;letter-spacing:.02em;}
+  .hero p{margin-top:12px;color:var(--sub);font-size:1.02rem;}
+
+  section{margin:26px 0;}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:24px 22px;box-shadow:0 1px 2px rgba(0,0,0,.03);
+  }
+  h2{font-size:1.15rem;font-weight:800;margin-bottom:10px;display:flex;align-items:center;gap:9px;}
+  h2::before{content:"";width:8px;height:20px;border-radius:4px;background:var(--blue);display:inline-block;}
+
+  .features{list-style:none;}
+  .features li{
+    padding:11px 0;border-top:1px solid var(--line);
+    display:flex;align-items:flex-start;gap:10px;color:var(--ink);
+  }
+  .features li:first-child{border-top:none;}
+  .features li::before{content:"✓";color:var(--blue);font-weight:800;flex:none;}
+
+  .contact-mail{
+    display:inline-block;margin-top:8px;font-size:1.12rem;font-weight:700;color:var(--blue-dark);
+  }
+  .contact-note{color:var(--sub);font-size:.92rem;margin-top:6px;}
+
+  details{border-top:1px solid var(--line);}
+  details:first-of-type{border-top:none;}
+  summary{
+    list-style:none;cursor:pointer;padding:15px 2px;font-weight:700;font-size:1rem;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{
+    content:"+";color:var(--blue);font-size:1.4rem;font-weight:400;line-height:1;transition:transform .2s;
+  }
+  details[open] summary::after{transform:rotate(45deg);}
+  details .ans{padding:0 2px 18px;color:var(--sub);font-size:.97rem;}
+
+  footer{text-align:center;padding:40px 20px 60px;color:var(--sub);font-size:.85rem;}
+  footer .links{margin-bottom:14px;}
+  footer .links a{margin:0 10px;font-weight:600;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="badge">💬</div>
+      <h1>Bizリプ</h1>
+      <p>ビジネスメールやチャットの返信文をAIが提案するアプリです。状況や相手に合わせた自然な返信文を素早く作成できます。</p>
+    </header>
+
+    <section class="card">
+      <h2>主な機能</h2>
+      <ul class="features">
+        <li>AIによる返信文作成</li>
+        <li>シーン別の返信提案</li>
+        <li>ビジネスメール対応</li>
+        <li>チャット返信対応</li>
+        <li>サブスクリプションによるPro機能</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>よくある質問</h2>
+
+      <details>
+        <summary>Proを購入したのに反映されません</summary>
+        <div class="ans">アプリ内の「購入を復元」をお試しください。</div>
+      </details>
+
+      <details>
+        <summary>サブスクリプションを解約したい</summary>
+        <div class="ans">Apple IDのサブスクリプション管理画面から解約できます。</div>
+      </details>
+
+      <details>
+        <summary>AIが期待通りの文章を作りません</summary>
+        <div class="ans">入力内容を具体的にすると精度が向上します。</div>
+      </details>
+    </section>
+
+    <section class="card">
+      <h2>お問い合わせ</h2>
+      <p>ご質問・不具合のご報告は、以下のメールアドレスまでお気軽にご連絡ください。</p>
+      <a class="contact-mail" href="mailto:tamafactory5@gmail.com">tamafactory5@gmail.com</a>
+      <p class="contact-note">ご利用の端末・iOSバージョン・アプリのバージョンを添えていただくとスムーズです。</p>
+    </section>
+
+    <footer>
+      <div class="links">
+        <a href="https://tama912.github.io/tamafactory-support/bizrip/privacy/">プライバシーポリシー</a>
+        <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">利用規約</a>
+      </div>
+      © 2026 TamaFactory
+    </footer>
+  </div>
+</body>
+</html>
