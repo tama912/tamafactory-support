@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>ぷるみ サポート</title>
+<meta name="description" content="ぷるみのサポートページ。お問い合わせ・よくある質問。" />
+<style>
+  :root{
+    --pink:#ff3b7f; --pink-dark:#e21f65; --pink-soft:#ffe6f0;
+    --ink:#1d1d1f; --sub:#6e6e73; --bg:#fbfbfd; --card:#ffffff; --line:#ececf0;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Helvetica Neue",Arial,sans-serif;
+    color:var(--ink); background:var(--bg); line-height:1.85; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:0 20px;}
+  a{color:var(--pink-dark);text-decoration:none;}
+  a:hover{text-decoration:underline;}
+
+  .hero{text-align:center;padding:72px 20px 44px;}
+  .badge{
+    width:76px;height:76px;margin:0 auto 22px;border-radius:22px;
+    background:linear-gradient(145deg,#ff86b5,var(--pink));
+    box-shadow:0 10px 24px rgba(255,59,127,.28);
+    display:flex;align-items:center;justify-content:center;font-size:38px;
+  }
+  .hero h1{font-size:2rem;font-weight:800;letter-spacing:.02em;}
+  .hero p{margin-top:12px;color:var(--sub);font-size:1.02rem;}
+
+  section{margin:26px 0;}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:18px;
+    padding:24px 22px;box-shadow:0 1px 2px rgba(0,0,0,.03);
+  }
+  h2{font-size:1.15rem;font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:9px;}
+  h2::before{content:"";width:8px;height:20px;border-radius:4px;background:var(--pink);display:inline-block;}
+
+  .contact-mail{
+    display:inline-block;margin-top:8px;font-size:1.12rem;font-weight:700;color:var(--pink-dark);
+  }
+  .contact-note{color:var(--sub);font-size:.92rem;margin-top:6px;}
+
+  details{border-top:1px solid var(--line);}
+  details:first-of-type{border-top:none;}
+  summary{
+    list-style:none;cursor:pointer;padding:15px 2px;font-weight:700;font-size:1rem;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  summary::-webkit-details-marker{display:none;}
+  summary::after{
+    content:"+";color:var(--pink);font-size:1.4rem;font-weight:400;line-height:1;transition:transform .2s;
+  }
+  details[open] summary::after{transform:rotate(45deg);}
+  details .ans{padding:0 2px 18px;color:var(--sub);font-size:.97rem;}
+  details .ans ol{margin:8px 0 0 1.2em;}
+  details .ans li{margin:3px 0;}
+
+  footer{text-align:center;padding:40px 20px 60px;color:var(--sub);font-size:.85rem;}
+  footer .links{margin-bottom:14px;}
+  footer .links a{margin:0 10px;font-weight:600;}
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="badge">🩷</div>
+      <h1>ぷるみ サポート</h1>
+      <p>画像の一部をぷるぷる、ふわふわ、ぶるぶる動かして楽しむアプリです。</p>
+    </header>
+
+    <section class="card">
+      <h2>お問い合わせ</h2>
+      <p>ご質問・不具合のご報告は、以下のメールアドレスまでお気軽にご連絡ください。</p>
+      <a class="contact-mail" href="mailto:tamafactory5@gmail.com">tamafactory5@gmail.com</a>
+      <p class="contact-note">できるだけ早く返信いたしますが、内容によりお時間をいただく場合があります。ご利用の端末・iOSバージョン・アプリのバージョンを添えていただくとスムーズです。</p>
+    </section>
+
+    <section class="card">
+      <h2>よくある質問</h2>
+
+      <details>
+        <summary>画像が読み込めません</summary>
+        <div class="ans">
+          写真へのアクセスが許可されているかご確認ください。
+          <ol>
+            <li>iOSの「設定」→「ぷるみ」→「写真」を開く</li>
+            <li>「すべての写真」または「写真を選択」を許可する</li>
+          </ol>
+          対応形式は JPEG・PNG・HEIC です。極端に大きい画像や破損したファイルは読み込めない場合があります。改善しないときはアプリを再起動してお試しください。
+        </div>
+      </details>
+
+      <details>
+        <summary>動画が保存されません</summary>
+        <div class="ans">
+          作成した動画は端末の「写真」に保存されます。以下をご確認ください。
+          <ol>
+            <li>「設定」→「ぷるみ」→「写真」で保存（追加）が許可されているか</li>
+            <li>端末の空き容量が十分にあるか</li>
+            <li>無料版は1日5回までの保存制限があります（翌日にリセット）</li>
+          </ol>
+          制限を超えて保存したい場合は、ぷるみ Pro で無制限に保存できます。
+        </div>
+      </details>
+
+      <details>
+        <summary>購入を復元したい</summary>
+        <div class="ans">
+          機種変更や再インストール後は、アプリ内の「設定」→「購入を復元」から復元できます。
+          <ol>
+            <li>購入時と同じ Apple ID で App Store にサインインしているかご確認ください</li>
+            <li>それでも復元されない場合は、時間をおいて再度お試しください</li>
+          </ol>
+          解決しない場合はお問い合わせください。
+        </div>
+      </details>
+
+      <details>
+        <summary>サブスクリプションを解約したい</summary>
+        <div class="ans">
+          サブスクリプションはいつでも解約できます。
+          <ol>
+            <li>iOSの「設定」→ 一番上の自分の名前 →「サブスクリプション」を開く</li>
+            <li>「ぷるみ Pro」を選び「サブスクリプションをキャンセル」</li>
+          </ol>
+          解約後も、現在の請求期間の終了までは Pro 機能をご利用いただけます。
+        </div>
+      </details>
+
+      <details>
+        <summary>アプリが正常に動作しません</summary>
+        <div class="ans">
+          次の手順で改善することがあります。
+          <ol>
+            <li>App Store で最新版へアップデートする</li>
+            <li>アプリを完全に終了して再起動する</li>
+            <li>端末を再起動する</li>
+          </ol>
+          それでも解決しない場合は、症状・端末・iOSバージョンを添えてお問い合わせください。
+        </div>
+      </details>
+    </section>
+
+    <footer>
+      <div class="links">
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="terms.html">利用規約</a>
+      </div>
+      © 2026 tamafactory
+    </footer>
+  </div>
+</body>
+</html>
